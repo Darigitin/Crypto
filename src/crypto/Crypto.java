@@ -41,7 +41,6 @@ static Scanner get = new Scanner(System.in);
 
     private static void Atbash() {
         System.out.println("Please enter your text:");
-        atbash = get.
     }
     
 }
