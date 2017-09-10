@@ -24,6 +24,7 @@ static Scanner get = new Scanner(System.in);
        System.out.println("Press 2 for Scytale");
        System.out.println("Press 3 for        ");
        int i = get.nextInt();
+       get.nextLine();
         switch (i) {
             case 1:
                 Atbash();
@@ -41,6 +42,11 @@ static Scanner get = new Scanner(System.in);
 
     private static void Atbash() {
         System.out.println("Please enter your text:");
+        String text;
+        text = get.nextLine();
+        System.out.println(text);
+        AtBash atbash = new AtBash(text);
+        System.out.println(atbash.encrypt());
     }
     
 }
