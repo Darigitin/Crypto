@@ -21,7 +21,7 @@ static Scanner get = new Scanner(System.in);
        
        System.out.println("Please select a menu Option: \n");
        System.out.println("Press 1 for Atbash");
-       System.out.println("Press 2 for Scytale");
+       System.out.println("Press 2 for Frequency Analysis");
        System.out.println("Press 3 for        ");
        int i = get.nextInt();
        get.nextLine();
@@ -30,6 +30,7 @@ static Scanner get = new Scanner(System.in);
                 Atbash();
                 break;
             case 2:
+                FreqText();
                 break;
             case 3:
                 break;
@@ -47,6 +48,11 @@ static Scanner get = new Scanner(System.in);
         System.out.println(text);
         AtBash atbash = new AtBash(text);
         System.out.println(atbash.encrypt());
+    }
+
+    private static void FreqText() {
+        FreqText freq = new FreqText();
+        freq.analyze();
     }
     
 }
